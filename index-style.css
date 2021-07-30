@@ -7,6 +7,8 @@ html{
     font-size: 62.5%;
 }
 
+
+
 /* --------page loader------ */
 #page_loader{
     position: fixed;
@@ -30,13 +32,13 @@ z-index: 9999;
 animation: loaders 1.5s linear infinite;
 
 }
-@keyframes loaders { /* animation use krle keyframe use krtei hbe ..... ekhne amra sudhu holud take na puro circle takei ghoracchi */
+@keyframes loaders { 
             
     0%{
-        transform: rotate(0deg); /* 0% e 0 degree */
+        transform: rotate(0deg); 
     }
     100%{
-        transform: rotate(360deg); /* 100% hole 360 degree */
+        transform: rotate(360deg); 
     }
 }
 #page_loader .Ploader::before{
@@ -55,13 +57,13 @@ animation: loaders 1.5s linear infinite;
     animation: loaderText 1.5s linear infinite;
 }
 
-@keyframes loaderText { /* animation use krle keyframe use krtei hbe ..... ekhne amra sudhu holud take na puro circle takei ghoracchi */
+@keyframes loaderText { 
             
     0%{
-        transform: rotate(360deg); /* 0% e 0 degree */
+        transform: rotate(360deg); 
     }
     100%{
-        transform: rotate(0deg); /* 100% hole 360 degree */
+        transform: rotate(0deg);
     }
 }
 
@@ -80,6 +82,8 @@ header{
     align-items: center;
     justify-content: space-around;
     padding: 10rem;
+
+
 }
 .left_head{
     width: auto;
@@ -144,6 +148,8 @@ header .left_head img{
         transform: scale(0);
     }
 }
+
+
 .right_head h2{
     width: 52rem;
     height: auto;
@@ -257,13 +263,68 @@ header .left_head img{
 
 
 
+/* ---about--- */
 
+.about{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fdf6f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 8rem;
+}
+.about .about_head{
+    width: 100%;
+    height: 15vh;
+    /* background-color: rgb(58, 176, 73,.2); */
+    display: grid;
+    place-items: center;
+}
 
+.about .about_head h1{
+    font-size: 6rem;
+    color: #071632;
+    text-transform: uppercase;
+    animation: aboutHead 5s ease-in-out infinite;
+}
+@keyframes aboutHead{
+    0%{ color: #071632; }
+    50%{ color: #3ab049; }
+    100%{ color: #071632; }
+}
 
+.about .about_bottom{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .about_bottom img{
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    transition: all 1.5s linear;
+}
 
+.about .about_bottom img:hover{
+    filter: grayscale(1);
+}
 
+.about .about_bottom p{
+    line-height: 3.8rem;
+    font-size: 2.5rem;
+    color: #171717;
+    padding: 6rem;
+    font-weight: 500;
+}
 
-
+.about .about_bottom p::first-letter{
+    font-size: 10rem;
+    color: #0b2f72;
+}
 
 
 
@@ -302,6 +363,10 @@ footer .footer_content h1{
     font-size: 1.5rem;
 }
 
+
+
+
+
 /* ------- Responsive -------- */
 
 
@@ -318,19 +383,30 @@ footer .footer_content h1{
     .left_head{
         margin-top: 5rem;
     }
+    .about{
+       
+        padding: 4rem;
+    }
+.about .about_bottom p{
+    font-size: 2.5rem;
+    
+}
     
 } 
 @media (max-width:920px) {
     html{
-        font-size: 52%;
+        font-size: 45%;
     }
     header{
         flex-direction: column;
     }
     .left_head{
-        margin-top: 5rem;
+        margin-top: 1rem;
     }
-    
+    .head_social .head_social_links{
+        
+        font-size: 4rem;
+    }
 }
 @media (max-width:780px) {
     html{
@@ -339,6 +415,15 @@ footer .footer_content h1{
     header{
         flex-direction: column;
        
+    }
+    .about .about_bottom{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .about{
+       
+        padding: 2.2rem;
     }
     
 }
@@ -353,6 +438,21 @@ footer .footer_content h1{
         
         font-size: 4rem;
     }
+    
+    .about .about_bottom{
+    flex-direction: column;
+    justify-content: space-around;
+    }
+    .about .about_bottom img{
+        width: 30rem;
+        height: 30rem;
+    }
+    .about .about_bottom p{
+        
+        line-height: 3.5rem;
+    }
+        
+    
 }
  @media (max-width:320px) {
     html{
@@ -365,5 +465,13 @@ footer .footer_content h1{
         
         font-size: 4rem;
     }
-    
+    .about .about_bottom img{
+        width: 40rem;
+        height: 40rem;
+    }
+    .about .about_bottom{
+    flex-direction: column;
+    justify-content: space-around;
+    }
+ 
 } 
