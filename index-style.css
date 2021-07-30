@@ -85,6 +85,22 @@ header{
 
 
 }
+header::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #3ab049;
+    animation: headAn 2s normal forwards ease-in-out;
+}
+@keyframes headAn{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -100%;
+    }
+}
 .left_head{
     width: auto;
     height: 100%;
