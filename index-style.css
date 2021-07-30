@@ -7,7 +7,9 @@ html{
     font-size: 62.5%;
 }
 
-
+body{
+    background-color: #fdf6f0;
+}
 
 /* --------page loader------ */
 #page_loader{
@@ -82,8 +84,6 @@ header{
     align-items: center;
     justify-content: space-around;
     padding: 10rem;
-
-
 }
 header::before{
     content: '';
@@ -277,7 +277,11 @@ header .left_head img{
 
 /* ---------main-------- */
 
-
+main{
+    width: 100vw;
+    background-color: rgb(11, 47, 114,0.4);
+    z-index: 5;
+}
 
 /* ---about--- */
 
@@ -289,7 +293,8 @@ header .left_head img{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 8rem;
+    padding: 2rem;
+    
 }
 .about .about_head{
     width: 100%;
@@ -323,6 +328,7 @@ header .left_head img{
     height: 50rem;
     border-radius: 50%;
     transition: all 1.5s linear;
+    padding: 2rem;
 }
 
 .about .about_bottom img:hover{
@@ -344,10 +350,147 @@ header .left_head img{
 
 
 
+/* -----my goals---- */
 
 
 
+.goals{
+    padding: 100px;
+    text-align: center;
+    background: #071632;
+}
+.goals .goals_head h1{
+    color: #fdf6f0;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.goals .container
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 6rem ;
+}
+.goals .container .goalsBx
+{
+    position: relative;
+    background: #fff;
+    width: 35rem;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s linear;
+}
 
+.goals .container .goalsBx:hover{
+    transform: scale(1.06);
+}
+.goals .container .goalsBx img
+{
+    max-width: 10rem;
+}
+.goals .container .goalsBx h2
+{
+    font-weight: 1000;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+/* -----Graphics Design---- */
+.design
+    {
+        width: 100vw;
+        height: 80rem;
+        padding: 5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem;
+    }
+.design .design_head{
+    height: 20rem;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    /* background-color: rgb(58, 176, 73, 0.5); */
+}
+.design .design_head h1{
+    color: #3ab049;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+
+.design .design_head h1::before{
+    content: "~Graphics~";
+    position: absolute;
+    width:100%;
+    color: #071632;
+    top: 0;
+    left: 0;
+    border-right:  0.2rem solid #0b2f72;
+    animation: text 3s linear infinite;
+    -webkit-animation: text 3s linear infinite;
+    overflow: hidden;
+
+}
+
+
+ @-webkit-keyframes text{
+
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+
+} 
+
+
+.design .design_bottom{
+    width: 100%;
+    height: 60rem;
+    display: grid;
+    place-items: center;
+    
+    /* background-color: rgba(167, 255, 179, 0.5); */
+    
+}
+.design .design_bottom .design_photo{
+
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.design .design_bottom .design_photo img{
+
+    padding: 2rem;
+    border-radius: 3.3rem;
+    transition: all .2s linear;
+    width: 40rem;
+    height: 45rem;
+    
+}
+
+.design .design_bottom .design_photo img:hover{
+    transform: scale(1.1);
+}
+
+.design .design_bottom .design_photo::-webkit-scrollbar{
+    overflow: hidden;
+}
 
 
 
@@ -358,34 +501,34 @@ header .left_head img{
 
 /* ------ footer ------- */
 footer{
-    width: 100vw;
     height: 10rem;
-    background-color: #071632;
-    
-    
+    background-color: transparent;
+ 
 }
 footer .footer_content{
-    width: 100%;
+    width: 100vw;
     height: 100%;
-    background-color: #fdf6f0;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
+    background-color: #071632;
+    /* border-top-left-radius: 50%;
+    border-top-right-radius: 50%; */
     /* text-align: center; */
     display: grid;
     place-items: center;
 }
 footer .footer_content h1{
-    color: #071632 ;
+    color: #fdf6f0 ;
     font-size: 1.5rem;
+    font-weight: 400;
 }
+
+
+
 
 
 
 
 
 /* ------- Responsive -------- */
-
-
 
 
 
@@ -407,7 +550,23 @@ footer .footer_content h1{
     font-size: 2.5rem;
     
 }
-    
+    .goals
+    {
+        padding: 5rem;
+    }
+    .goals .container
+    {
+        justify-content: center;
+        margin-top: 2rem;
+
+    }
+    .goals .container .goalsBx
+    {
+        margin: 2rem;
+        width: 30rem;
+        height: 35rem;
+    }
+
 } 
 @media (max-width:920px) {
     html{
@@ -423,6 +582,7 @@ footer .footer_content h1{
         
         font-size: 4rem;
     }
+    
 }
 @media (max-width:780px) {
     html{
