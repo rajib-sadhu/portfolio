@@ -281,7 +281,7 @@ header .left_head img{
 
 /* ------ footer ------- */
 footer{
-    width: 100%;
+    width: 100vw;
     height: 10rem;
     background-color: #071632;
     
