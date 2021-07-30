@@ -181,6 +181,11 @@ header .left_head img{
         flex-direction: column;
        
     }
+    .head_social .head_social_links{
+        
+        font-size: 4rem;
+        
+    }
     
 }
 
