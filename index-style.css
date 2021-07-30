@@ -279,7 +279,28 @@ header .left_head img{
 
 
 
-
+/* ------ footer ------- */
+footer{
+    width: 100%;
+    height: 10rem;
+    background-color: #071632;
+    
+    
+}
+footer .footer_content{
+    width: 100%;
+    height: 100%;
+    background-color: #fdf6f0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    /* text-align: center; */
+    display: grid;
+    place-items: center;
+}
+footer .footer_content h1{
+    color: #071632 ;
+    font-size: 1.5rem;
+}
 
 /* ------- Responsive -------- */
 
