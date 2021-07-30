@@ -6,6 +6,72 @@
 html{
     font-size: 62.5%;
 }
+
+/* --------page loader------ */
+#page_loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #071632;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+}
+
+#page_loader .Ploader{
+width: 20rem;
+height: 20rem;
+background-color: transparent;
+border-radius: 50%;
+position: relative;
+border: 1.5rem solid #fdf6f0;
+border-top: 1.5rem solid #3ab049 ;
+z-index: 9999;
+animation: loaders 1.5s linear infinite;
+
+}
+@keyframes loaders { /* animation use krle keyframe use krtei hbe ..... ekhne amra sudhu holud take na puro circle takei ghoracchi */
+            
+    0%{
+        transform: rotate(0deg); /* 0% e 0 degree */
+    }
+    100%{
+        transform: rotate(360deg); /* 100% hole 360 degree */
+    }
+}
+#page_loader .Ploader::before{
+    content: 'David RS';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: #fdf6f0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    animation: loaderText 1.5s linear infinite;
+}
+
+@keyframes loaderText { /* animation use krle keyframe use krtei hbe ..... ekhne amra sudhu holud take na puro circle takei ghoracchi */
+            
+    0%{
+        transform: rotate(360deg); /* 0% e 0 degree */
+    }
+    100%{
+        transform: rotate(0deg); /* 100% hole 360 degree */
+    }
+}
+
+
+
+
+
+
+/* -------Header Start--------- */
+
 header{
     width: 100vw;
     height: 100vh;
@@ -154,6 +220,28 @@ header .left_head img{
     color: #fdf6f0;
 }
 
+/* ---------main-------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -162,47 +250,22 @@ header .left_head img{
 
 /* ------- Responsive -------- */
 
-@media (max-width:400px) {
+
+
+
+
+
+
+
+@media (max-width:1024px) {
     html{
-        font-size: 25%;
+        font-size: 57%;
     }
-    header{
-        flex-direction: column;
-       
-    }
-    
-}
-
-@media (max-width:450px) {
-    html{
-        font-size: 35%;
-    }
-    header{
-        flex-direction: column;
-       
-    }
-    .head_social .head_social_links{
-        
-        font-size: 4rem;
-        
+    .left_head{
+        margin-top: 5rem;
     }
     
-}
-
-/*
-
-@media (max-width:780px) {
-    html{
-        font-size: 45%;
-    }
-    header{
-        flex-direction: column;
-       
-    }
-    
-    
-}
-
+} 
 @media (max-width:920px) {
     html{
         font-size: 52%;
@@ -215,12 +278,38 @@ header .left_head img{
     }
     
 }
-@media (max-width:1024px) {
+@media (max-width:780px) {
     html{
-        font-size: 57%;
+        font-size: 45%;
     }
-    .left_head{
-        margin-top: 5rem;
+    header{
+        flex-direction: column;
+       
     }
     
-}*/
+}
+@media (max-width:450px) {
+    html{
+        font-size: 35%;
+    }
+    header{
+        flex-direction: column;
+    }
+    .head_social .head_social_links{
+        
+        font-size: 4rem;
+    }
+}
+ @media (max-width:320px) {
+    html{
+        font-size: 23%;
+    }
+    header{
+        flex-direction: column;
+    }
+    .head_social .head_social_links{
+        
+        font-size: 4rem;
+    }
+    
+} 
