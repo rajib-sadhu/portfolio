@@ -14,7 +14,7 @@ function pageLoad(){
 const centerId= document.getElementById('designId');
 
 
-fetch("https://jsonplaceholder.typicode.com/photos?_limit=50").then((apiData) =>{ // "?_limit=20 for" limited data
+fetch("https://jsonplaceholder.typicode.com/photos?_limit=26").then((apiData) =>{ // "?_limit=20 for" limited data
 
 
 
@@ -23,16 +23,18 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=50").then((apiData) =>
 }).then((jsonData) =>{ 
 
 
- jsonData.map((DesignVal) => {
+  
+    jsonData.map((DesignVal) => {
 
-     key=DesignVal.id;
-     let Designimg = document.createElement("img");
-     Designimg.src=` https://picsum.photos/250/300?random=1${DesignVal.id} `;
-     Designimg.title='API Photos - Site Under Development';
+        key=DesignVal.id;
+        let Designimg = document.createElement("img");
+        Designimg.src=`content/graphics/${DesignVal.id}.jpg `;
+        Designimg.title='API Photos - Site Under Development';
+   
+        centerId.appendChild(Designimg);
 
-     centerId.appendChild(Designimg);
+    });
 
 
- });
 
 });
