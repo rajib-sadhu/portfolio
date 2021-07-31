@@ -247,15 +247,6 @@ header .left_head img{
     
 }
 
-/* .head_social p{
-    width: 15rem;
-    height: auto;
-    color: #3ab049;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    margin-right: 2rem;
-} */
-
 .head_social .head_social_links{
     width: 100%;
     height: auto;
@@ -363,6 +354,27 @@ main{
     color: #fdf6f0;
     font-size: 4rem;
     text-transform: uppercase;
+    animation: goalHead 1s linear infinite;
+}
+@-webkit-keyframes goalHead{
+    0%{
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(1);
+    }
+    40%{
+        transform: scale(1.06);
+    }
+    60%{
+        transform: scale(1.02);
+    }
+    80%{
+        transform: scale(1.06);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 .goals .container
 {
