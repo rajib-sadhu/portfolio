@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="content/RS logo 1.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f0874bf18b.js" crossorigin="anonymous"></script>
+    <title>Rajib Sadhu - Contact</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box; font-family: 'Lato', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #fdf6f0;
+    width: 100vw;
+}
+
+/* --------page loader------ */
+#page_loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #071632;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+}
+
+#page_loader .Ploader{
+width: 20rem;
+height: 20rem;
+background-color: transparent;
+border-radius: 50%;
+position: relative;
+border: 1.5rem solid #fdf6f0;
+border-top: 1.5rem solid #3ab049 ;
+z-index: 9999;
+animation: loaders 1.5s linear infinite;
+
+}
+@keyframes loaders { 
+            
+    0%{
+        transform: rotate(0deg); 
+    }
+    100%{
+        transform: rotate(360deg); 
+    }
+}
+#page_loader .Ploader::before{
+    content: 'David RS';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: #fdf6f0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    animation: loaderText 1.5s linear infinite;
+}
+@keyframes loaderText { 
+            
+            0%{
+                transform: rotate(360deg); 
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+
+        
+/* -----main---- */
+
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #071632;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+main::before{
+    content: '';
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    border: 5rem solid #3ab049;
+    border-radius: 50%;
+    top: -25%;
+    left: -25%;
+}
+main::after{
+    content: '';
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    border: 5rem solid #3ab049;
+    border-radius: 50%;
+    bottom: -25%;
+    right: -25%;
+}
+main .center_content{
+
+    position: absolute;
+    width: 70vw;
+    height: 70vh;
+    background-color: #fdf6f0;
+    z-index: 5;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+main .center_content .back_home{
+    width: 100%;
+    height: 2rem;
+    font-size: 1.2rem;
+
+    text-align: left;
+}
+
+main .center_content .back_home a{
+    text-decoration: none;
+    color: #071632;
+    text-transform: uppercase;
+}
+
+ul{
+    list-style: none;
+}
+
+main .center_content .center_main{
+    width: 100%;
+    height: 100%;
+    /* background-color: #3ab049; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+main .center_content .center_main .left_content{
+    width: auto;
+    height: 100%;
+    /* background-color: rgb(7, 22, 50,0.3); */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2.5rem;
+}
+
+
+
+main .center_content .center_main .left_content .contact{
+    color: #071632;
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+main .center_content .center_main .left_content .contact h2{
+    /* text-transform: uppercase; */
+    margin-bottom: 1.5rem;
+}
+
+main .center_content .center_main .left_content .socials{
+    text-align: left;
+    padding: 3rem;
+    color: #071632;
+    font-size: 2rem;
+}
+
+main .center_content .center_main .left_content .socials h2{
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+
+main .center_content .center_main .left_content .socials ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .center_content .center_main .left_content .socials ul li a{
+    /* color: #071632; */
+    font-size: 3rem;
+}
+
+main .center_content .center_main .left_content .socials ul li a .fa-facebook-square{
+    color: #4267B2 ;
+}
+
+main .center_content .center_main .left_content .socials ul li a .fa-twitter-square{
+    color: #1DA1F2 ;
+}
+main .center_content .center_main .left_content .socials ul li a .fa-instagram{
+    color:  white;
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); 
+}
+main .center_content .center_main .left_content .socials ul li a .fa-linkedin{
+    color: #0077b5 ;
+}
+.fa-facebook-square:hover,.fa-linkedin:hover,.fa-instagram:hover,.fa-twitter-square:hover{
+    color: #071632;
+    transform: scale(1.4);
+}
+
+
+
+
+
+main .center_content .center_main .right_content{
+    width: auto;
+    height: 100%;
+    /* background-color: rgb(7, 22, 50,0.3); */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2.5rem;
+}
+
+main .center_content .center_main .right_content iframe{
+    width: 42rem;
+    height: 100%;
+}
+
+main .center_content .center_main .right_content iframe::-webkit-scrollbar{
+    overflow: hidden;
+}
+
+
+
+
+
+@media (max-width:1024px) {
+    
+    html{
+        font-size: 52%;
+    }
+
+    
+    main .center_content .center_main{
+    flex-direction: column;
+    padding: 0.5rem;
+    }
+}
+@media (max-width:780px) {
+    html{
+        font-size: 45%;
+    }
+}
+
+
+@media (max-width:450px) {
+    html{
+        font-size: 40%;
+    }
+}
+
+
+
+    </style>
+</head>
+<body onload="pageLoad()">
+    <div id="page_loader">
+        <span class="Ploader"></span>
+    </div>
+
+
+
+    
+    <main>
+        <!--  -->
+
+        <div class="center_content">
+
+            <div class="back_home">
+                <a href="index.html"> <i class="fas fa-chevron-left"></i> Back to Home </a>
+            </div>
+            <div class="center_main">
+
+                <div class="left_content">
+
+                    <div class="contact">
+                        <h2>Contact</h2>
+                        <ul>
+                            <li>Address : Baguihati, Kolkata, West Bengal, Kol-59</li>
+                            <li>Mobile : +91 9126765077</li>
+                            <li>Email : rahulrajib.sadhu@gmail.com</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="socials">
+                        <h2>Follow Me <i class="fas fa-rss"></i></h2>
+                        <ul>
+                            <li><a title="Facebook" target="blank" href="https://www.facebook.com/thedavidrs"> <i class="fab fa-facebook-square"></i> </a></li>
+                            <li> <a title="Twitter" target="blank" href="https://twitter.com/rajib_sadhu"><i class="fab fa-twitter-square"></i></a></li>
+                            <li><a title="Instagram" target="blank" href="https://www.instagram.com/thedavidrs_official/"><i class="fab fa-instagram"></i></a></li>
+                            <li><a title="Linkedin" target="blank" href="https://www.linkedin.com/in/rajibsadhu"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="right_content">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfomGf5B-Yxlf2gtzGPjJiH0lPQDvKr5YbehI2Ab_Q1HEwGgQ/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+
+            </div>
+
+        </div>
+
+        
+
+
+     
+    </main>
+    
+
+     <!-- footer -->
+
+     <!-- <section class="footer">
+        <p class="text">Copyright © 2021 Rajib Sadhu ( David RS ). All Rights Reserved</p>
+    </section> -->
+
+
+  
+
+
+    <script>
+        //pageloader
+
+
+const pageLoader=document.getElementById('page_loader');
+
+function pageLoad(){
+    pageLoader.style.display= 'none';
+}
+    </script>
+</body>
+</html>
