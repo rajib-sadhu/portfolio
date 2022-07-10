@@ -487,10 +487,23 @@ main{
     height: 60rem;
     display: grid;
     place-items: center;
-    
+    position:relative;
     /* background-color: rgba(167, 255, 179, 0.5); */
     
 }
+
+.design .design_bottom::after{
+    content: 'swipe >>';
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    color: #171717;
+    font-style: italic;
+    font-weight: bolder;
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+}
+
 .design .design_bottom .design_photo{
 
     width: 100%;
