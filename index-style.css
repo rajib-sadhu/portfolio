@@ -9,6 +9,11 @@ html{
 
 body{
     background-color: #fdf6f0;
+     scrollbar-width: none;
+    -ms-overflow-style: none; 
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 
 /* --------page loader------ */
